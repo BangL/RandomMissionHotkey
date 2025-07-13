@@ -1,0 +1,18 @@
+<mod name="RandomMissionHotkey"
+    author="BangL"
+    description="Start random unlocked mission (in camp)"
+    version="1.1"
+    color="60 60 60">
+    <updates>
+        <update provider="modworkshop" identifier="52639" />
+    </updates>
+    <keybinds>
+        <keybind keybind_id="RandomMissionHotkey"
+            name="Start random unlocked mission (in camp)"
+            localized="false"
+            run_in_menu="false"
+            run_in_game="true"
+            run_in_paused_game="true"
+            script_path="RandomMissionHotkey.lua" />
+    </keybinds>
+</mod>
