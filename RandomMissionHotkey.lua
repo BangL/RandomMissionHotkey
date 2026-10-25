@@ -50,5 +50,9 @@ if managers.player then
         return
     end
 
-    managers.player:local_player():sound():play("generic_fail_sound")
+    -- no player unit while in the main menu or loading
+    local player = managers.player:local_player()
+    if player then
+        player:sound():play("generic_fail_sound")
+    end
 end
