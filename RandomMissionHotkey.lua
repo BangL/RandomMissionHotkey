@@ -1,7 +1,8 @@
 if managers.player then
     if Network:is_server() and TimerManager and TimerManager:game() and
         (managers.player._random_mission_hotkey_t == nil or ((TimerManager:game():time() - managers.player._random_mission_hotkey_t) > 5)) and
-        managers.player:local_player_in_camp() and managers.raid_job and managers.progression and managers.raid_job:is_camp_loaded() then
+        managers.player:local_player_in_camp() and managers.raid_job and managers.progression and managers.raid_job:is_camp_loaded() and
+        not (managers.raid_job:current_job() and managers.raid_job:current_job().job_type == OperationsTweakData.JOB_TYPE_OPERATION) then
         managers.player._random_mission_hotkey_t = TimerManager:game():time()
 
         -- check operation unlock status
