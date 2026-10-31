@@ -5,7 +5,7 @@
     color="60 60 60">
     <updates>
         <update identifier="randommissionhotkey">
-            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/randommissionhotkey.json"/>
+            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/randommissionhotkey.json" patchnotes="https://github.com/BangL/RandomMissionHotkey/blob/master/CHANGELOG.md"/>
         </update>
     </updates>
     <keybinds>
